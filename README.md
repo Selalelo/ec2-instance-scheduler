@@ -8,6 +8,7 @@ This repository contains AWS lambda functions to start and stop EC2 instances at
 - **Stop Instance:** At 5:02 PM, Monday to Friday.
 
 ## Architectural Diagram
+![EC2 Schedular Architecrure](images/architecture.png)
 
 ## Setup
 1. Create two lambda functions in the AWS Lambda console.
