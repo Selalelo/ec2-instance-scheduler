@@ -42,7 +42,7 @@ The Lambda execution role should include the following policy:
             "Sid": "VisualEditor1",
             "Effect": "Allow",
             "Action": "logs:CreateLogGroup",
-            "Resource": "arn:aws:logs:us-east-1:058264288062:*"
+            "Resource": "arn:aws:logs:us-east-1:aws_account_id:*"
         },
         {
             "Sid": "VisualEditor2",
@@ -51,7 +51,7 @@ The Lambda execution role should include the following policy:
                 "logs:CreateLogStream",
                 "logs:PutLogEvents"
             ],
-            "Resource": "arn:aws:logs:us-east-1:058264288062:log-group:/aws/lambda/Stop_EC2_INSTANCE_AT_A_CERTAIN_TIME:*"
+            "Resource": "arn:aws:logs:us-east-1:aws_account_id:log-group:/aws/lambda/Stop_EC2_INSTANCE_AT_A_CERTAIN_TIME:*"
         }
     ]
 }
